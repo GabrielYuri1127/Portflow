@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family:'Montserrat', sans-serif;;
+}
+body{
+    height: 100%;
+    
+}
+.top{
+    width: 100%;
+    height: 15vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.top-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 80vw;
+}
+.top-logo{
+    width: 10vw;
+}
+.menu-hamb{
+    display: none;
+}
+.menu{
+    display:flex;
+    justify-content: space-between;
+    width: 25vw;
+    font-size:1.2vw;
+    color:#9A9A9A;
+    
+}
+.menu li:hover{
+    color:black;
+    font-weight: bold;
+    cursor:pointer;
+
+}
+main{
+    height: 100%;
+}
+.banner{
+    background-image: url(./img/laranja\ azul\ recorte.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 85vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-content{
+    width: 80vw;
+    height: 18vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.banner-title{
+    color:white;
+    font-size:3.5vw;
+    font-weight: bold;
+}
+.banner-fac{
+    font-size:2vw;
+    color:#A8D4EF;
+}
+.gallery{
+    width: 100%;
+    height: 150vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-content{
+    width: 80%;
+    height: 80%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.gallery-img{
+    width: 19.3vw;
+}
+.gallery-img img{
+    width: 100%;
+}
+footer{
+    background-color: #F6F6F6;
+    width: 100%;
+    height: 15vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-content{
+    width: 80%;
+    height: 60%;
+    
+}
+.footer-wrap{
+    width:80%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+}
+.social{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 20vw;
+}
+.social-img{
+ width: 1.6vw; 
+}
+.social-img img{
+ width: 100%;
+}
+.fb{
+    width: 0.8vw;
+}
+.copy{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 32vw;
+}
+.copy-logo{
+    font-weight: bold;
+    font-size:1vw;
+}
+.copy-text{
+    width: 25vw;
+}
+.copy-text p{
+    font-size:0.65vw;
+    color:#C8C8C8;
+}
+.button{
+    display: none;
+}
+@media (max-width:376px){
+    .top{
+        height: 3vh;
+    }
+    .top-content{
+        width: 100%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+    .top-logo{
+        width: 20vw;
+    }
+    .menu{
+        display:none;
+    }
+    .menu-hamb{
+        background-color: black;
+        height: 3vh;
+        width: 25vw;
+        position: absolute;
+        left:0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .menu-hamb img{
+        width: 4vw;
+    }
+    .banner{
+        height: 97vh;
+        background-position:85% ;
+        display: flex;
+        align-items:flex-end;
+    }
+    .banner-content{
+        height: 50vh;
+        display: flex;
+        justify-content:center;
+    }
+    .banner-title{
+        font-size:15vw;
+        padding-bottom:2vh;
+    }
+    .banner-fac{
+        font-size:8vw;
+    }
+    .gallery{
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .gallery-content{
+        padding: 7vh 0 0;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        height: 80%;
+        flex-wrap: nowrap;
+
+    }
+    .gallery-img{
+        width: 80vw;
+        margin-bottom: 2vh;
+        
+    }
+    footer{
+        height: 30vh;
+        background-color: white;
+        align-items: flex-start;
+    }
+    .social{
+        background-color:#7FDBD4;
+        width: 80vw;
+        height: 7vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .social-img{
+        width:7.5vw;
+    }
+    .fb{
+        width: 4vw;
+    }
+    .footer-wrap{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .copy{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        width: 80vw;
+        height: 10vh;
+        flex-direction: column;
+        position: relative;
+    }
+    .copy-logo{
+        font-size:2vw;
+    }
+    .copy-text p{
+        font-size:2vw;
+        color:black;
+
+    }
+    .button{
+        background-color:#333333;
+        width: 15vw;
+        height: 3.5vh;
+        color:#6A6A6A;
+        border:none;
+        display: initial;
+        position: absolute;
+        right:0;
+        top:30px;
+    }
+}
